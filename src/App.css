@@ -1,0 +1,993 @@
+/*** Navbar Component ***/
+.navbar-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 3rem;
+
+  --bg: #434343; /* changing the value of a css variable */
+
+  background: var(--bg);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.nav-active {
+  width: var(--nav-width) !important;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-list li:first-of-type {
+  margin-top: 2.3rem !important;
+}
+
+.menu {
+  position: fixed;
+  top: 0.2rem;
+  left: 1rem;
+
+  --color: #4facfe;
+
+  color: var(--color);
+  transition: 0.5s;
+}
+
+.sp-page {
+  left: 5rem;
+}
+
+.nav-link {
+  height: 3.5rem;
+  margin-left: 0.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  --color: #4facfe;
+
+  color: var(--color);
+}
+
+.nav-link:hover {
+  --color: #fff;
+
+  color: var(--color);
+}
+
+.link-des {
+  margin-left: 0.8rem;
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.menu-active {
+  left: var(--left) !important;
+
+  --color: #4facfe;
+
+  color: var(--color);
+  transform: rotate(180deg);
+}
+
+.menu-active:hover {
+  --color: #fff;
+
+  color: var(--color);
+}
+
+.dd-icon {
+  position: relative;
+  margin: auto;
+  margin-left: 0.3rem;
+  transition: 0.5s;
+}
+
+.drop-down {
+  display: none;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.dd-active {
+  display: flex;
+}
+
+.dd-link {
+  text-decoration: none;
+  padding: 5px;
+
+  --color: #4facfe;
+
+  color: var(--color);
+}
+
+.dd-link:hover {
+  --color: #fff;
+
+  color: var(--color);
+}
+
+/*** AboutPage Component ***/
+.head h1 {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  color: var(--color);
+}
+
+.head {
+  border-bottom-left-radius: 9rem;
+  border-bottom-right-radius: 9rem;
+  height: auto;
+  background: var(--bg);
+}
+
+.about-content {
+  height: auto;
+  text-align: center;
+  margin: 5rem 0 5rem 5;
+}
+
+.about-content p {
+  margin: 5rem 5rem 5rem 5rem;
+}
+
+.list {
+  list-style: none;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/*** Detail Component ***/
+
+.detail {
+  height: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  column-gap: 20px;
+}
+
+.left {
+  display: grid;
+  grid-template-rows: auto auto;
+  height: auto;
+}
+
+.single-sp {
+  text-align: center;
+  margin-top: 3rem;
+  display: inline-block;
+}
+
+.recent-reviews {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 20px;
+  height: auto;
+}
+
+.book-appoin {
+  margin-top: 3rem;
+  text-align: center;
+  height: 80vh;
+  background: whitesmoke;
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(79, 172, 254, 1);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(79, 172, 254, 1);
+  box-shadow: 10px 10px 5px 0 rgba(79, 172, 254, 1);
+}
+
+.container-form {
+  text-align: left;
+  color: var(--color);
+}
+
+.container-form form {
+  display: grid;
+  row-gap: 20px;
+}
+
+.container-form form p {
+  font-weight: 400;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-field input {
+  padding: 10px 15px;
+  border-radius: 100px;
+  outline: none;
+}
+
+.btn {
+  --bg: #fff;
+
+  background-color: var(--bg);
+  color: var(--color);
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  width: 93%;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--bg-fallback);
+  
+  --color: #fff;
+}
+
+.ratings {
+  color: var(--bg-fallback);
+  font-size: 1.5rem;
+}
+
+.more-details {
+  height: auto;
+  margin: 5rem;
+  text-align: left;
+}
+
+/*** LandingPage Component ***/
+main {
+  text-align: center;
+  margin-left: 3rem;
+  color: var(--color);
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo {
+  height: 10vh;
+  width: auto;
+}
+
+.skew {
+  margin-top: -200px;
+  padding: 200px 0;
+  transform: skew(0deg, -10deg);
+  background: var(--bg);
+}
+
+.about-container {
+  margin-top: -200px;
+  padding: 200px 0;
+  transform: skew(0deg, -10deg);
+  background: var(--bg);
+}
+
+.content {
+  text-align: center;
+  transform: skew(0deg, 10deg);
+  padding-top: 50px;
+}
+
+.content h1 {
+  font-size: var(--large-text);
+}
+
+.content p {
+  font-size: var(--small-text);
+  background: var(--color);
+  color: white;
+  padding: 0.2rem;
+  margin: 0.3rem;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.intro-search {
+  border: 3px solid var(--bg-fallback);
+  height: var(--search-box-h);
+  width: var(--search-box-w);
+  padding: 0 10px;
+  outline: none;
+}
+
+/* About Section */
+.about h1 {
+  margin-bottom: 0;
+}
+
+.about hr {
+  border: 2px solid var(--bg-fallback);
+  margin: 0 1rem 0 1rem;
+}
+
+.container h1 {
+  margin-bottom: 0;
+}
+
+.container hr {
+  border: 2px solid var(--bg-fallback);
+  margin: 0 1rem 0 1rem;
+}
+
+.services {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.service {
+  cursor: pointer;
+  width: auto;
+  justify-content: center;
+  padding: 25px 0;
+  margin: 0;
+  text-align: center;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.service:hover {
+  background-color: var(--bg-fallback);
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+.service::before {
+  content: '';
+  border-width: 20px;
+  border-style: solid;
+  border-color: #fff #fff #fff #fff;
+  right: -40px;
+  top: -40px;
+  transition: right 0.3s ease-out, top 0.3s ease-out;
+  position: absolute;
+}
+
+.service:hover::before {
+  right: 0;
+  top: 0;
+}
+
+/*** Specialist ***/
+.preview {
+  height: auto;
+  min-height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+.specialists {
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.profile-card {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 0.2rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 1px var(--bg-fallback);
+}
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto 10px;
+}
+
+.location {
+  color: var(--bg-fallback);
+}
+
+.review {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button {
+  border: 1px solid var(--bg-fallback);
+  padding: 5px 15px;
+  font-style: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn1 {
+  color: var(--bg-fallback);
+  background: white;
+  transition: 0.8s ease-in-out;
+}
+
+.btn1:hover {
+  color: white;
+  background: var(--bg-fallback);
+}
+
+.btn2 {
+  color: #fff;
+  background: var(--bg-fallback);
+  transition: 0.8s ease-in-out;
+}
+
+.btn2:hover {
+  color: var(--bg-fallback);
+  background: white;
+}
+
+.preview h1 {
+  margin-bottom: 0;
+}
+
+.preview hr {
+  border: 2px solid var(--bg-fallback);
+  margin: 0 5rem 0 5rem;
+}
+
+/*** Mental Disorders preview list ***/
+.md-preview {
+  height: auto;
+
+  --bg: #fff;
+
+  background: var(--bg);
+  width: 100%;
+}
+
+.md-list-prev {
+  list-style: none;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.md-item-prev {
+  border: 1px solid transparent;
+  --bg: #fff;
+
+  background: var(--bg);
+  box-shadow: 0 1px 10px 1px var(--bg-fallback);
+  color: var(--color);
+  width: auto;
+  display: grid;
+  text-align: left;
+  height: auto;
+  cursor: pointer;
+  padding-left: 0.4rem;
+  transition: 0.4s;
+}
+
+.short-des {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: auto;
+}
+
+.md-item-prev:hover {
+  background: var(--bg-fallback);
+}
+
+.md-item-prev:hover button {
+  --bg-fallback: #fff;
+}
+
+/* Swiper */
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-pagination-bullets {
+  margin-top: 1rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--bg-fallback);
+  font-weight: bolder;
+}
+
+.spc {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.search-field {
+  height: auto;
+  padding: 10px;
+  border: 2px solid var(--bg-fallback);
+  border-radius: 25px;
+  outline: none;
+}
+
+.name {
+  width: 16rem;
+  margin-bottom: 2rem;
+}
+
+.city {
+  width: 10rem;
+}
+
+/* Mental Disorders Page */
+.md-wrapper {
+  padding: 0;
+  margin: 0 0 0 0.5rem;
+}
+
+.md-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  row-gap: 0.3rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Appointment Page */
+.appointment-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+  margin: 25px auto;
+}
+
+.appointment-table thead tr {
+  background: var(--bg);
+  color: var(--color);
+}
+
+/* footer css */
+.wrap-footer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.main-footer {
+  padding-left: 4%;
+  position: relative;
+  width: 100%;
+  color: var(--color);
+  border-top: 3px solid var(--bg-fallback);
+  border-radius: 30%;
+}
+
+.footer-bottom {
+  background-color: var(--bg-fallback);
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+  font-size: var(--small-text);
+  font-family: var(--lato);
+  text-align: left;
+}
+
+.footer-container {
+  float: left;
+  width: 100%;
+}
+
+/*** Pre-loader ***/
+
+.preloader {
+  height: auto;
+  min-height: 10vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-spin {
+  width: 2rem;
+  height: 2rem;
+  border: 5px dashed var(--color);
+  border-top: 5px dashed rgba(79, 172, 254, 0.8);
+  border-bottom: 5px dashed rgba(79, 172, 254, 0.8);
+  border-radius: 50%;
+  animation: spin 1s linear infinite both;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*** Single Mental disorder details Page ***/
+.symptoms {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.symptoms-wrapper {
+  box-shadow: 0 1px 10px 1px var(--bg-fallback);
+  color: var(--color);
+  display: grid;
+  text-align: left;
+  height: auto;
+  padding-left: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.symptoms-wrapper h3 {
+  text-align: center;
+}
+
+/*** Forum ***/
+.forum-wrapper {
+  padding: 1rem;
+}
+
+.forum-post-intro {
+  text-align: left;
+  background: var(--bg);
+  padding: 0.4rem;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.post-intro-right {
+  height: 40vh;
+  margin-top: -50px;
+}
+
+.post-intro-img {
+  height: 100%;
+  width: auto;
+}
+
+.forum-posts-wrapper {
+  background: var(--bg);
+  padding: 5px;
+  margin-top: 1rem;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: auto;
+  text-align: left;
+}
+
+.single-post {
+  --bg: #fff;
+
+  background: var(--bg);
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+
+.post {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--bg-fallback);
+}
+
+.post img {
+  height: 10vh;
+  margin-right: 0.3rem;
+}
+
+.post-options {
+  padding: 5px;
+  width: 100%;
+}
+
+/* Form for posting in forum */
+.post-form {
+  background: var(--bg);
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+#post-textarea {
+  height: auto;
+  min-height: 15vh;
+  border-color: transparent;
+}
+
+#comment-textarea {
+  height: auto;
+  min-height: 15vh;
+}
+
+.post-form button {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.comment-modal {
+  position: fixed;
+  z-index: 1;
+  left: 1rem;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.comment-form {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+  min-width: 70%;
+  height: 100%;
+}
+
+.comment-btns {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Sign up && Login **/
+.center-box-wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-box {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  min-height: 40vh;
+  text-align: center;
+  background-image: var(--bg);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+}
+
+.center-box input {
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+  width: 16rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+.error {
+  background: rgba(238, 101, 101, 0.931);
+  color: #fff;
+}
+
+.success {
+  background: rgba(94, 240, 118, 0.931);
+}
+
+/* Media Queries */
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-content p {
+    margin: 5rem 2rem 5rem 2rem;
+  }
+
+  .services {
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .nav-active {
+    overflow: scroll;
+  }
+
+  .md-list-prev {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  .spc {
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .md-list {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .detail {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .recent-reviews {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+  :root {
+    --nav-width: 60% !important;
+    --left: 50% !important;
+    --search-box-h: 3rem !important;
+    --search-box-w: 90% !important;
+  }
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (max-width: 480px) {
+  .about-content p {
+    margin: 5rem 2rem 5rem 2rem;
+  }
+
+  main {
+    margin-left: 3rem;
+  }
+
+  .detail {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .recent-reviews {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .navbar-wrapper {
+    width: 3rem;
+  }
+
+  .name {
+    width: auto;
+  }
+
+  .services {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
+
+  .md-list-prev {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .specialists {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
+
+  .spc {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .wrap-footer {
+    margin-left: 3rem;
+  }
+
+  .md-list {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .forum-post-intro {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  :root {
+    --nav-width: 80% !important;
+    --left: 70% !important;
+    --search-box-h: 3rem !important;
+    --search-box-w: 90% !important;
+  }
+}

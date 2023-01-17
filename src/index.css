@@ -1,0 +1,195 @@
+:root {
+  /* Background for light theme */
+  --bg: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --bg-fallback: #4facfe;
+
+  /* Color for light theme */
+  --color: #434343;
+
+  /* font sizes */
+  --xxsmall-text: calc(10px + 1vmin);
+  --small-text: calc(10px + 2vmin);
+  --medium-text: calc(10px + 4vmin);
+  --large-text: calc(10px + 5vmin);
+  --super-large: calc(20px + 9vmin);
+  --simple-text: 1.3rem;
+
+  /* Font families */
+  --russo: 'Russo One', sans-serif;
+  --lato: 'Lato', sans-serif;
+
+  /* Navbar width */
+  --nav-width: 40%;
+
+  /* Menu icon */
+  --left: 30%;
+
+  /* Seach box size */
+  --search-box-h: 4rem;
+  --search-box-w: 70%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**** Scrollbar ****/
+/* width */
+::-webkit-scrollbar {
+  width: 0.44rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  --bg: #434343;
+  background: var(--bg);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Common CSS classes */
+.heading {
+  font-size: var(--super-large);
+  font-family: var(--russo);
+  font-weight: 100;
+}
+
+.sub-heading {
+  font-size: var(--large-text);
+  font-family: var(--russo);
+  font-weight: 100;
+}
+
+.medium-text {
+  font-size: var(--medium-text);
+  font-family: var(--lato);
+}
+
+.small-text {
+  font-size: var(--small-text);
+  font-family: var(--lato);
+}
+
+.xxsmall-text {
+  font-size: var(--xxsmall-text);
+  font-family: var(--lato);
+}
+
+.small-heading {
+  font-size: var(--simple-text);
+  font-family: var(--russo);
+  font-weight: 100;
+}
+
+.blue-text {
+  --color: #4facfe;
+  color: var(--color);
+}
+
+.black-text {
+  --color: #434343;
+  color: var(--color);
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.large-btn {
+  outline: none;
+  border: 1px solid var(--bg-fallback);
+  box-shadow: 0px 1px 10px 1px var(--bg-fallback);
+  --bg: #fff;
+
+  background-color: var(--bg);
+
+  --color: #4facfe;
+
+  color: var(--color);
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.large-btn:hover {
+  --bg: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+  background-image: var(--bg);
+
+  --color: #fff;
+
+  border: 1px solid var(--color);
+}
+
+.plain-btn {
+  border: none;
+  outline: none;
+  color: var(--bg-fallback);
+  background: transparent;
+  cursor: pointer;
+}
+
+.right {
+  text-align: right;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+small {
+  color: sienna;
+}
+
+small:hover {
+  color: navy;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.p-1 {
+  margin: 1rem;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.4rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+hr {
+  border: 1px solid var(--bg-fallback);
+  width: 100%;
+}
